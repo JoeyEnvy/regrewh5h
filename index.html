@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>regrewh5h - Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 1rem;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+            padding: 3rem;
+            text-align: center;
+        }
+        .hero img {
+            width: 80%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 5px solid #ff6347;
+            margin: 1rem 0;
+        }
+        .about {
+            padding: 3rem;
+            background-color: #fff;
+            text-align: justify;
+        }
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 3rem;
+            background-color: #f9f9f9;
+        }
+        .service-item {
+            background-color: #fff;
+            padding: 1.5rem;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .service-item i {
+            font-size: 2rem;
+            color: #ff6347;
+            margin-bottom: 1rem;
+        }
+        .testimonial {
+            background-color: #333;
+            color: #fff;
+            padding: 3rem;
+            text-align: center;
+        }
+        .testimonial blockquote {
+            font-style: italic;
+            margin: 0;
+        }
+        .contact {
+            background-color: #fff;
+            padding: 3rem;
+        }
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .contact input, .contact textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .contact button {
+            background-color: #ff6347;
+            color: #fff;
+            padding: 0.5rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to regrewh5h</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <main>
+        <section class="hero">
+            <h2>Our Services</h2>
+            <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" alt="Restaurant Interior">
+        </section>
+        <section class="about">
+            <h2>About regrewh5h</h2>
+            <p>At regrewh5h, we believe in the power of culinary art to bring people together. Our restaurant offers a unique dining experience that combines rustic charm with modern elegance. Our chefs are passionate about crafting dishes that not only taste delightful but also provide a visual feast. We cater to a diverse audience, from local food enthusiasts to international travelers seeking an authentic taste of our region.</p>
+            <p>Our mission is to provide an unforgettable gastronomic journey for every guest. We are dedicated to using fresh, locally sourced ingredients to create dishes that celebrate the rich flavors of our heritage. Our restaurant is designed to be a welcoming space where friends and family can gather, enjoy, and create lasting memories. Join us and be a part of our culinary story.</p>
+        </section>
+        <section class="services">
+            <div class="service-item">
+                <i class="fas fa-utensils"></i>
+                <h3>Gourmet Dining</h3>
+                <p>Experience fine dining with our exquisite menu crafted by top chefs.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-glass-cheers"></i>
+                <h3>Events & Catering</h3>
+                <p>Make your events unforgettable with our personalized catering services.</p>
+            </div>
+            <div class="service-item">
+                <i class="fas fa-seedling"></i>
+                <h3>Farm-to-Table</h3>
+                <p>Enjoy meals made with fresh, organic ingredients sourced locally.</p>
+            </div>
+        </section>
+        <section class="testimonial">
+            <blockquote>"An amazing dining experience. The flavors were incredible and the ambiance was perfect. Highly recommend regrewh5h!"</blockquote>
+            <cite>- Happy Customer</cite>
+        </section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 regrewh5h. All rights reserved.</p>
+    </footer>
+</body>
+</html>
